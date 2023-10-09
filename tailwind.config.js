@@ -39,8 +39,7 @@ module.exports = {
         590: "590px",
       },
       backgroundImage: {
-        "hero-pattern":
-          "url('https://demos.wrappixel.com/premium-admin-templates/react/flexy-react/main/static/media/welcome-bg-2x-svg.25338f53.svg')",
+        "hero-pattern": "linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)",
       },
     },
   },
