@@ -26,7 +26,7 @@ const Ecommerce = () => {
         </div>
         <div className='flex m-3 flex-wrap justify-center gap-1 items-center'>
           {earningData.map((item, index) => (
-            <div key={item.title} className='bg-white dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56 p-4 pt-9 rounded-2xl'>
+            <div key={item.title} className='bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl'>
               <button type='button' style={{ color: item.iconColor, backgroundColor: item.iconBg }} className='text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl'>
                 {item.icon}
               </button>
@@ -65,23 +65,27 @@ const Ecommerce = () => {
                 </p>
                 <p className='text-gray-500 mt-1'>Budget</p>
               </div>
-              <div>
-                <div className='mt-8'>
-                  <p>
-                    <span className='text-3xl font-semibold'>$48,438</span>
-                  </p>
-                  <p className='text-gray-500 mt-1'>Expense</p>
-                </div>
-
-                <div className='mt-5'>
-                  <SparkLine currentColor='blue' id='line-sparkline' type='Line' height='80px' width='250px' data={SparklineAreaData} color='blue' />
-                </div>
+              <div className='mt-8'>
+                <p className='text-3xl font-semibold'>$48,438</p>
+                <p className='text-gray-500 mt-1'>Expense</p>
               </div>
+
+              <div className='mt-5'>
+                <SparkLine currentColor='blue' id='line-sparkline' type='Line' height='80px' width='250px' data={SparklineAreaData} color='blue' />
+              </div>
+
+              <div className='mt-10'>
+                <Button color='white' bgColor='blue' text='Download Report' borderRadius='10px' />
+              </div>
+            </div>
+            <div>
+              <Stacked width='320px' height='360px' />
             </div>
           </div>
         </div>
       </div>
     </div>
+
   )
 }
 
