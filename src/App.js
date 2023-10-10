@@ -71,11 +71,11 @@ const App = () => {
                 {/* Pages */}
                 <Route path="/orders" element={<Orders />} />
                 <Route path="/employees" element={<Employee />} />
-                <Route path="/customers" element={<Customers></Customers>} />
+                <Route path="/customers" element={<Customers />} />
                 {/* Apps */}
                 <Route path="/kanban" element={<Kanban></Kanban>} />
                 <Route path="/editor" element={<Editor></Editor>} />
-                <Route path="/calender" element={<Calender></Calender>} />
+                <Route path="/calendar" element={<Calender />} />
                 <Route
                   path="/color-picker"
                   element={<ColorPicker></ColorPicker>}
