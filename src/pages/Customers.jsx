@@ -6,7 +6,7 @@ import { Header } from '../components'
 
 const Customers = () => {
   return (
-    <div className="m-2 md:m-10 md:p-10 bg-white rounded-3xl">
+    <div className="m-2 sm:mt-24 md:m-10 md:p-10 bg-white rounded-3xl">
       <Header title='Customers' category='Page' />
       <GridComponent id="gridcomp" dataSource={customersData} allowPaging allowSorting toolbar={['Delete']} editSettings={{ allowDeleting: true, allowEditing: true }} width='auto'>
         <ColumnsDirective>

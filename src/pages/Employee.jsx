@@ -13,7 +13,7 @@ import { employeesData, employeesGrid } from "../data/dummy";
 import { Header } from "../components";
 
 const Employee = () => {
-  return <div className="m-2 md:m-10 md:p-10 bg-white rounded-3xl">
+  return <div className="m-2 sm:mt-24 md:m-10 md:p-10 bg-white rounded-3xl">
     <Header title='Employees' category='Page' />
     <GridComponent id="gridcomp" dataSource={employeesData} allowPaging allowSorting toolbar={['Search']} width='auto'>
       <ColumnsDirective>
