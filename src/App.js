@@ -92,10 +92,6 @@ const App = () => {
                 {/* Charts */}
                 <Route path="/line" element={<Line></Line>} />
                 <Route path="/area" element={<Area></Area>} />
-                <Route
-                  path="/color-picker"
-                  element={<ColorPicker></ColorPicker>}
-                />
                 <Route path="/bar" element={<Bar></Bar>} />
                 <Route path="/pie" element={<Pie></Pie>} />
                 <Route path="/financial" element={<Financial></Financial>} />
